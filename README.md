@@ -3,12 +3,14 @@
 
 This project is an AI-powered web application that assists in generating and refining song lyrics based on user input. It is built using **Flutter** for the frontend and **Flask** for the backend. The AI model is powered by Google Generative AI, which generates song lyrics based on the given prompts.
 
-[](./image.jpg)
-
 ## Deployment
 - The app is currently deployed on Vercel:
  [Link](https://lyricsai.vercel.app/)
 
+<div align="center">
+<image src="./image.jpg">
+</div>
+ 
 ## Features
 
 - **Custom Input for Language and Genre**: Users can specify the language and genre of the song.
