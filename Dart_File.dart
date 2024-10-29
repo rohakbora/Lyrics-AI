@@ -64,7 +64,7 @@ class _MusicProducerState extends State<MusicProducer> {
     String prompt = 'Write a ${_genreController.text} song in ${_languageController.text} based on the following description: ${_descriptionController.text}';
 
     final response = await http.post(
-      Uri.parse('https://lyrics-ai-api.onrender.com/generate-lyrics'), // Update this as needed
+      Uri.parse('https://lyrics-ai-api.vercel.app/generate-lyrics'), // Update this as needed
       headers: {'Content-Type': 'application/json'},
       body: jsonEncode({'prompt': prompt}),
     );
@@ -93,7 +93,7 @@ class _MusicProducerState extends State<MusicProducer> {
     String updatedPrompt = 'Refine the following lyrics: "${_lyricsController.text}". Keep the genre as ${_genreController.text} and the description as "${_descriptionController.text}".';
 
     final response = await http.post(
-      Uri.parse('https://lyrics-ai-api.onrender.com/generate-lyrics'), // Update this as needed
+      Uri.parse('https://lyrics-ai-api.vercel.app/generate-lyrics'), // Update this as needed
       headers: {'Content-Type': 'application/json'},
       body: jsonEncode({'prompt': updatedPrompt}),
     );
